@@ -1,0 +1,85 @@
+$icons-font: "icons";
+
+@font-face {
+    font-family: $icons-font;
+    src: url("../fonts/icons.eot?fc474bfb2926e63a1711dc327d29bbfc#iefix") format("embedded-opentype"),
+url("../fonts/icons.svg?fc474bfb2926e63a1711dc327d29bbfc#icons") format("svg"),
+url("../fonts/icons.ttf?fc474bfb2926e63a1711dc327d29bbfc") format("truetype"),
+url("../fonts/icons.woff2?fc474bfb2926e63a1711dc327d29bbfc") format("woff2"),
+url("../fonts/icons.woff?fc474bfb2926e63a1711dc327d29bbfc") format("woff");
+}
+
+*[class^="icon-"]:before, *[class*=" icon-"]:before {
+    font-family: icons !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$icons-map: (
+    "1": "\f101",
+    "2": "\f102",
+    "3": "\f103",
+    "4": "\f104",
+    "5": "\f105",
+    "6": "\f106",
+    "7": "\f107",
+    "8": "\f108",
+    "flag": "\f109",
+    "mine": "\f10a",
+    "q": "\f10b",
+    "x": "\f10c",
+);
+
+.icon-1:before {
+    content: map-get($icons-map, "1");
+    color: #3333cc;
+}
+.icon-2:before {
+    content: map-get($icons-map, "2");
+    color: #006600;
+}
+.icon-3:before {
+    content: map-get($icons-map, "3");
+    color: #cc0000;
+}
+.icon-4:before {
+    content: map-get($icons-map, "4");
+    color: #660066;
+}
+.icon-5:before {
+    content: map-get($icons-map, "5");
+    color: #006666;
+}
+.icon-6:before {
+    content: map-get($icons-map, "6");
+}
+.icon-7:before {
+    content: map-get($icons-map, "7");
+}
+.icon-8:before {
+    content: map-get($icons-map, "8");
+}
+.icon-flag:before {
+    content: map-get($icons-map, "flag");
+    color: #f00;
+}
+.icon-mine:before {
+    content: map-get($icons-map, "mine");
+}
+.icon-q:before {
+    content: map-get($icons-map, "q");
+}
+.icon-x:before {
+    content: map-get($icons-map, "x");
+    color: #f00;
+}
+
+.icon-exploded:before {
+    content: map-get($icons-map, "mine");
+    color: #f00;
+}
