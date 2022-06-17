@@ -292,7 +292,7 @@ function Minesweeper({ difficulty = "easy" }) {
         return (
             <div className={`minesweeper ${difficultyClass}`}>
                 <div className="minesweeper__control panel panel--out">
-                    <div className="minesweeper__display panel panel--in">
+                    <div className="minesweeper__display minesweeper__display--mines panel panel--in">
                         {mineDisplay}
                     </div>
                     <div className="minesweeper__smiley panel panel--in">
@@ -302,7 +302,7 @@ function Minesweeper({ difficulty = "easy" }) {
                             className={`minesweeper__smiley-button panel panel--out smiley smiley--${smileyMood}`}
                         ></button>
                     </div>
-                    <div className="minesweeper__display panel panel--in">
+                    <div className="minesweeper__display minesweeper__display--timer panel panel--in">
                         {timerDisplay}
                     </div>
                 </div>

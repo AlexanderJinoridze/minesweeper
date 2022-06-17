@@ -3,10 +3,10 @@ $icons-font: "icons";
 @font-face {
     font-family: $icons-font;
     src: url("../fonts/icons.eot?fc474bfb2926e63a1711dc327d29bbfc#iefix") format("embedded-opentype"),
-url("../fonts/icons.svg?fc474bfb2926e63a1711dc327d29bbfc#icons") format("svg"),
-url("../fonts/icons.ttf?fc474bfb2926e63a1711dc327d29bbfc") format("truetype"),
-url("../fonts/icons.woff2?fc474bfb2926e63a1711dc327d29bbfc") format("woff2"),
-url("../fonts/icons.woff?fc474bfb2926e63a1711dc327d29bbfc") format("woff");
+    url("../fonts/icons.woff?fc474bfb2926e63a1711dc327d29bbfc") format("woff"),
+    url("../fonts/icons.woff2?fc474bfb2926e63a1711dc327d29bbfc") format("woff2"),
+    url("../fonts/icons.ttf?fc474bfb2926e63a1711dc327d29bbfc") format("truetype"),
+    url("../fonts/icons.svg?fc474bfb2926e63a1711dc327d29bbfc#icons") format("svg");
 }
 
 *[class^="icon-"]:before, *[class*=" icon-"]:before {
@@ -37,36 +37,39 @@ $icons-map: (
 
 .icon-1:before {
     content: map-get($icons-map, "1");
-    color: #3333cc;
+    color: blue;
 }
 .icon-2:before {
     content: map-get($icons-map, "2");
-    color: #006600;
+    color: green;
 }
 .icon-3:before {
     content: map-get($icons-map, "3");
-    color: #cc0000;
+    color: red;
 }
 .icon-4:before {
     content: map-get($icons-map, "4");
-    color: #660066;
+    color: purple;
 }
 .icon-5:before {
     content: map-get($icons-map, "5");
-    color: #006666;
+    color: maroon;
 }
 .icon-6:before {
     content: map-get($icons-map, "6");
+    color: turquoise;
 }
 .icon-7:before {
     content: map-get($icons-map, "7");
+    color: black;
 }
 .icon-8:before {
     content: map-get($icons-map, "8");
+    color: gray;
 }
 .icon-flag:before {
     content: map-get($icons-map, "flag");
-    color: #f00;
+    color: red;
 }
 .icon-mine:before {
     content: map-get($icons-map, "mine");
@@ -76,10 +79,10 @@ $icons-map: (
 }
 .icon-x:before {
     content: map-get($icons-map, "x");
-    color: #f00;
+    color: red;
 }
 
 .icon-exploded:before {
     content: map-get($icons-map, "mine");
-    color: #f00;
+    color: red;
 }

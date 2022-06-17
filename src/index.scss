@@ -3,7 +3,7 @@
 
 body {
     font-family: "Source Code Pro", monospace;
-    margin: 0;
+    margin: 32px;
 }
 
 button {
@@ -60,6 +60,14 @@ button {
         font-weight: bold;
         font-size: 24px;
         line-height: 32px;
+
+        &--mines {
+            text-align: left;
+        }
+
+        &--timer {
+            text-align: right;
+        }
     }
 
     &__smiley {
